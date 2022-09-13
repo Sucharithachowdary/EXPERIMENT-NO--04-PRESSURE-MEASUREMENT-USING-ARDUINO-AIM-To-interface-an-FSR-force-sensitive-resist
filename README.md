@@ -54,11 +54,12 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 
-![image](https://user-images.githubusercontent.com/36288975/163532979-a2a5cb5c-f495-442c-843e-bebb82737a35.png)
-
+![image](https://github.com/Sucharithachowdary/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/blob/main/exp-3.2.jpg?raw=true)
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
+
+![output](https://github.com/Sucharithachowdary/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/blob/main/exp-3.jpg?raw=true)
 
 
 
@@ -75,31 +76,44 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 10.	Plot the graph for the output voltage vs the resistance 
 
 
-### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+### PROGRAM
+```
+  Roll no : 212221240021
+ Name : K Sucharitha
+ Department : Artificial Intelligence and Machine Learning
+
+
+
+int sensorvalue=A0;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  sensorvalue= analogRead(A0);
+  int n=map(sensorvalue,0,466,0,10);
+  delay(100);
+  Serial.print("Raw Values = ");
+  Serial.println(sensorvalue);
+  Serial.print("Force = ");
+  Serial.println(n);
+  delay(100);
  
+} 
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+```
 
 ![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
 
 
 ### TABLE -02 standard deviation table 
 ### Population Standard Deviation
+
+```
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
 
 
@@ -127,6 +141,6 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 
 
 
-
+```
 
 ### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
