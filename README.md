@@ -58,7 +58,6 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
-
 ![output](https://github.com/Sucharithachowdary/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/blob/main/exp-3.jpg?raw=true)
 
 
@@ -111,6 +110,9 @@ void loop()
 
 
 ### TABLE -02 standard deviation table 
+
+
+![output](https://github.com/Sucharithachowdary/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/blob/main/exp-3.2.jpg?raw=true)
 ### Population Standard Deviation
 
 ```
@@ -129,18 +131,7 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
 
-
-
-
-
-
-
-
-
-
-
-
-
 ```
 
-### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
+### RESULTS :
+Arduino uno is interfaced with FSR and output values are indicated on a graph.
